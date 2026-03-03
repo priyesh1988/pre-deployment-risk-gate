@@ -1,11 +1,11 @@
 
-# Guardrail — Deployment Risk Intelligence for Kubernetes
+# Pre-Deployment Risk Gate — Deployment Risk Intelligence for Kubernetes
 
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
 ![Language](https://img.shields.io/badge/language-Go-blue)
 ![Status](https://img.shields.io/badge/status-early--stage-orange)
 
-Guardrail is a **Deployment Risk Intelligence platform** built from the ground up to help engineering teams prevent unsafe Kubernetes releases before they reach production.
+Pre-Deployment Risk Gate is a **Deployment Risk Intelligence platform** built from the ground up to help engineering teams prevent unsafe Kubernetes releases before they reach production.
 
 It is not a policy engine.
 It is not a vulnerability scanner.

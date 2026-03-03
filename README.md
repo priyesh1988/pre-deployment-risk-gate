@@ -32,7 +32,7 @@ Engineering teams in regulated environments need:
 - Audit-ready evidence
 - Org-level risk visibility
 
-Guardrail provides exactly that.
+Pre-Deployment Risk Gate provides exactly that.
 
 ---
 
@@ -50,9 +50,9 @@ Here’s how existing tools approach the space:
 
 ---
 
-## 🧠 How Guardrail Is Different
+## 🧠 How Pre-Deployment Risk Gate Is Different
 
-Guardrail shifts from **finding issues** to **quantifying release risk**.
+Pre-Deployment Risk Gate shifts from **finding issues** to **quantifying release risk**.
 
 Instead of 20 disconnected findings, Guardrail produces:
 
@@ -171,20 +171,20 @@ Build:
 
 ```bash
 go test ./...
-go build -o guardrail ./cmd/guardrail
+go build -o pre-deployment-risk-gate ./cmd/pre-deployment-risk-gate
 ```
 
 Scan:
 
 ```bash
-./guardrail -path ./k8s -env prod -threshold 65
+./pre-deployment-risk-gate -path ./k8s -env prod -threshold 65
 ```
 
 ---
 
 ## 🔧 Configuration
 
-Create `.guardrail.yaml`:
+Create `.pre-deployment-risk-gate.yaml`:
 
 ```yaml
 environment: prod
@@ -226,7 +226,7 @@ rules:
 
 Kubernetes is powerful — but YAML misconfigurations cause real outages.
 
-Guardrail prevents unsafe deployments before they reach production, giving teams confidence to ship faster without sacrificing compliance or reliability.
+Pre-Deployment Risk Gate prevents unsafe deployments before they reach production, giving teams confidence to ship faster without sacrificing compliance or reliability.
 
 ---
 

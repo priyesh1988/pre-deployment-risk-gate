@@ -1,0 +1,5 @@
+server
+guardrail.db
+private-key.pem
+*.log
+.env
